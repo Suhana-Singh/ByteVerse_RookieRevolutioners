@@ -1,0 +1,32 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+}
+body{
+    background-color:rgb(234,197,234);
+}.card{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:0.3s;
+    width: 300px;
+    margin: 20px;
+    float:left;
+}
+.card:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2)
+}
+.container{
+    padding:20px;
+}
+/*Responsive layout*/
+@media screen and(max-width:600px){
+    .card{
+        width:100%;
+        margin: 10px 0;
+    }
+}
+
