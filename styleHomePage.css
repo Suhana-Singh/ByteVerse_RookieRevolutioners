@@ -1,0 +1,103 @@
+/*Reset styles*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Global styles*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height:1.6;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Navigation styles*/
+nav{
+    display:flex;
+    align-items: center;
+    background-color: plum;
+    color: #fff;
+    padding: 0 10px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    justify-content: flex-start;
+    align-items:center;
+}
+nav ul li{
+    display:inline;
+    margin:0 10px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(136,46,136);
+    font-weight:bolder;
+}
+
+/*Hero section styles*/
+.hero{
+    background-image: url();
+    background-size: cover;
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2{
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+/*Button Styles*/
+.btn{
+    display:inline-block;
+    background-color: plum;
+    color:#fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius:5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover{
+background-color: #555;
+}
+
+/*Other section styles*/
+
+/*Footer Styles*/
+footer{
+    background-color: rgb(216,125,216);
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer:hover{
+    color:purple;
+    font-weight: bolder;
+}
