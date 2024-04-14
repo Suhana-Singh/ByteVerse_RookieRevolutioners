@@ -14,4 +14,5 @@ Our website is designed to be lightweight and efficient, without relying on exte
 # future scopes
 At present, we have focused our efforts on developing the frontend of our website to ensure a seamless user experience. Our future roadmap includes expanding our capabilities to the backend using Node.js, as well as integrating APIs to enable sign language recognition and text generation functionalities. Due to our current resource constraints and prioritization of frontend development, we have temporarily deferred backend and API integration. We believe this phased approach allows us to deliver a polished frontend experience before expanding our backend capabilities.
 # 28-hours work update
-
+Webpage screenshots: https://drive.google.com/drive/folders/1K1cBCN4vM-p7noEA9N6HyWE8eaZd__Gl?usp=sharing
+Visual Glimpse of website: https://drive.google.com/file/d/1fIujWqDXrnuyYiNXGLDM3Io5pPDG9oz8/view?usp=drive_link
