@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASL Quiz</title>
     <style>
-        *{
+        * {
             color: #14213d;
         }
-        .main h1{
-            display:flex;
+
+        .main h1 {
+            display: flex;
             justify-content: center;
             background-color: #14213d;
-            color:white
+            color: white
         }
-        body{
-            font-family: Arial,sans-serif;
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #fca311;
         }
-        img{
+
+        img {
             max-width: 600px;
             margin: 5px auto;
-            padding:2px;
-            border:1px solid #ccc;
+            padding: 2px;
+            border: 1px solid #ccc;
             border-radius: 8px;
         }
-        .quiz-container{
+
+        .quiz-container {
             max-width: 600px;
             margin: 50px auto;
-            padding:20px;
-            border:2px solid #ccc;
+            padding: 20px;
+            border: 2px solid #ccc;
             border-radius: 8px;
             border-color: #14213d;
             background-color: white;
         }
-        .question{
-            margin-bottom:20px;
+
+        .question {
+            margin-bottom: 20px;
         }
-        button{
+
+        button {
             padding: 10px 20px;
             margin-top: 10px;
             cursor: pointer;
         }
-        .correct{
-            color:green;
+
+        .correct {
+             background-color: rgb(204, 240, 204);
         }
-        .wrong{
-            color:red;
+
+        .wrong {
+            background-color: rgb(246, 194, 194);
         }
     </style>
 </head>
+
 <body>
-    <div class="main"><h1>ASL Quiz</h1></div>
+    <div class="main">
+        <h1>ASL Quiz</h1>
+    </div>
     <div class="quiz-container">
         <div class="question" id="question1">
             <h2>Question 1: Select the correct alphabet in ASL.</h2>
@@ -65,9 +77,11 @@
         <div class="question" id="question2">
             <h2>Question 2: Which of the following represents the letter 'A' in American Sign Language?</h2>
             <input type="radio" name="q2" value="H"><img src="./images_all/Sign_language_H.svg.png" width="50px"><br>
-            <input type="radio" name="q2" value="Y"><img src="./images_all/919px-Sign_language_Y.svg.png" width="50px"><br>
+            <input type="radio" name="q2" value="Y"><img src="./images_all/919px-Sign_language_Y.svg.png"
+                width="50px"><br>
             <input type="radio" name="q2" value="L"><img src="./images_all/Sign_language_L.svg" width="50px"><br>
-            <input type="radio" name="q2" value="A"><img src="./images_all/780px-Sign_language_A.svg.png" width="50px"><br>
+            <input type="radio" name="q2" value="A"><img src="./images_all/780px-Sign_language_A.svg.png"
+                width="50px"><br>
         </div>
 
         <div class="question" id="question3">
@@ -101,42 +115,44 @@
     </div>
 
     <script>
-        function checkAnswers(){
-            let correctAnswers =0;
+        function checkAnswers() {
+            let correctAnswers = 0;
 
-            checkAnswer('q1','E');
-            checkAnswer('q2','A');
-            checkAnswer('q3','K');
-            checkAnswer('q4','S');
-            checkAnswer('q5','W');
+            checkAnswer('q1', 'E');
+            checkAnswer('q2', 'A');
+            checkAnswer('q3', 'K');
+            checkAnswer('q4', 'S');
+            checkAnswer('q5', 'W');
 
-            document.getElementById('score').innerText="You got" + correctAnswers +"correct answers out of 5!";
+            document.getElementById('score').innerText = "You got " +correctAnswers + " correct answers out of 5!";
+        
 
-            function
-            checkAnswer(questionName, correctValue){
-                const selectedValue= document.querySelector('input[name="${questionName}"]:checked').value;
-                const options = document.querySelectorAll('input[name="${questionName}"]');
+            function checkAnswer(questionName, correctValue) {
+                const selectedValue = document.querySelector(`input[name="${questionName}"]:checked`).value;
+                const options = document.querySelectorAll(`input[name="${questionName}"]`);
 
-                if(selectedValue=== correctValue){
+                if (selectedValue === correctValue) {
                     correctAnswers++;
-                    options.forEach(option=>{
-                        if(option.value === correctValue){
+                    options.forEach(option => {
+                        if (option.value === correctValue) {
                             option.parentElement.classList.add('correct');
-                         }
-                         });
-                         }else{
-                            options.forEach(option=>{
-                                if(option.value === correctValue){
-                                    option.parentElement.classList.add('correct');
-                                } else if(option.checked){
+                        }
+                    });
+                } else {
+                    options.forEach(option => {
+                        if (option.value === correctValue) {
+                            option.parentElement.classList.add('correct');
+                        } else if (option.checked) {
                             option.parentElement.classList.add('wrong');
-                         }
+                        }
                     });
                 }
             }
-            
         }
+
+        
     </script>
-    
+
 </body>
+
 </html>
