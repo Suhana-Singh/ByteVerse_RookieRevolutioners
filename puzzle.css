@@ -42,3 +42,11 @@ img{
     padding-top: 50 px;
     padding-bottom: 50 px;
 }
+h3{
+    text-align: center;
+}
+.image{
+    padding-left: 50 px;
+    width: 200 px;
+    height: 200 px;
+}

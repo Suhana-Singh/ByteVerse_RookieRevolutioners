@@ -8,7 +8,7 @@ window.onload = function() {
     for(let r = 0; r < rows; r++) {
         for(let c = 0; c < columns; c++) {
             let tile = document.createElement("img");
-            tile.src = "./white1.jpg";
+            tile.src = "./images_all/white1.jpg";
             tile.draggable = true;
 
             tile.addEventListener("dragstart", dragStart);
@@ -22,7 +22,7 @@ window.onload = function() {
     }
 
     let pieces = [];
-    for(let i = 1; i < rows * columns; i++) {
+    for(let i = 1; i <= rows * columns; i++) {
         pieces.push(i.toString());
     }
     pieces.reverse();

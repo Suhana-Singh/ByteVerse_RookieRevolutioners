@@ -101,21 +101,3 @@ footer:hover{
     color:purple;
     font-weight: bolder;
 }
-/*.dropdown{
-    position:relative;
-    display: inline-block;
-}
-.dropbtn{
-    background-color: #fff;
-    color:purple;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-}
-.dropdown:hover.dropdown-content{
-    display: block;
-}
-.dropdown:focus-within .dropdown-content{
-    display:block;
-}*/
